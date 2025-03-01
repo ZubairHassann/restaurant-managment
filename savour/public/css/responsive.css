@@ -1,0 +1,235 @@
+/* ==================] MAX WIDTH 1068PX */
+@media (max-width: 1068px) {
+/* ========]section cards */
+    .section{
+        margin: 45px auto auto auto;
+    }
+    .card {
+        width: 48%;
+    }
+
+/* ========] footer section*/
+  .times span {
+      margin-left: 40px;
+  }
+
+  /* =================] add to cart responsive */
+  .modals {
+      width: 80%;
+  }
+  .modal-bodys {
+      overflow-y: auto;
+      flex-direction: column;
+  }
+  .card-image {
+      width: 100%;
+  }
+  .card-content {
+      width: 100%;
+  }
+  .modal-footers{
+      width: 99.1%;
+      border-bottom-left-radius: 7px;
+  }
+}
+
+/* ================] MAX WIDTH 868px*/
+@media (max-width: 868px) {
+/* ===================] footer section */
+  .footer-content {
+      width: 100% !important;
+      margin: 0% !important;
+      flex-direction: column;
+      flex-wrap: nowrap;
+  }
+
+  .times span {
+      margin-left: 20px;
+  }
+}
+
+/* ================] MAX WIDTH 770PX */
+@media (max-width:770px) {
+
+ /* ===========] sign in */
+    .fa-circle-user{
+        display: block;
+    }
+    .cart{
+        display: none !important;
+    }
+    .sign-in{
+        display: none !important;
+    }
+
+/*  =============== add to cart  */
+    .cart-modal-body{
+        display: none !important;
+    }
+/*  ========] profile menu*/
+   .profile-button{
+       display: none !important;
+   }
+   #dropdownMenu{
+    display: none !important;
+   }
+   .fa-bars{
+    color: #f3e5ab;
+    font-size: 20px!important;
+    display: block!important;
+    cursor: pointer;
+   }
+
+
+/* ===============] Sign Up form*/
+  .register-container {
+      font-size: 19px;
+      padding: 17px;
+      max-width: 380px !important;
+  }
+  .register-container .register-btn {
+      padding: 8px;
+      font-size: 14px;
+      line-height: 20px;
+  }
+/*  ====================] navigation links*/
+.nav-links a {
+    font-size: 12px;
+    padding: 11px 15px;
+}
+/* ===================] search bar */
+ .search-input {
+     padding: 11px 30px;
+     font-size: 12px;
+ }
+
+ .search-icon {
+     font-size: 12px;
+ }
+
+ /* ===============] section image */
+ .section{
+    margin: 35px auto auto auto;
+     height: auto !important;
+ }
+ .section img{
+    height: auto !important;
+ }
+ .card-container {
+     flex-direction: column;
+ }
+
+ .card {
+     width: 100%;
+ }
+
+/* ===========] footer section */
+.footer {
+ padding: 10px 20px;
+}
+
+.footer-log {
+ display: none;
+}
+/* =====================] add to cart */
+.modals{
+    width: 90%;
+}
+}
+
+
+/* =============] MAX WIDTH 470PX */
+@media (max-width:470px){
+/* ================] top nav  */
+    .nav-container{
+       padding: 5px 13px;
+    }
+    .navbar-left img {
+        margin: 0px 8px;
+    }
+    .navbar-left .delivery-info {
+        padding: 0px 8px;
+        font-size: 14px;
+    }
+
+/* ===============] Sign Up form*/
+   .register-container {
+       font-size: 17px;
+       padding: 14px;
+       max-width: 380px !important;
+       margin: 0px 12px;
+   }
+   .register-container h2 {
+    font-size: 20px !important;
+   }
+
+   .register-container label {
+       font-size: 14px !important;
+       line-height: 20px;
+   }
+   .register-container input,
+   .register-container select {
+       padding: 8px !important;
+       font-size: 13px !important;
+   }
+
+   .register-container input[type="date"] {
+       padding-right: 20px !important;
+   }
+   .form-row{
+    flex-direction: column;
+   }
+   .register-container .form-row .form-group {
+       width: 100% !important;
+   }
+
+   #gander {
+       width: 100% !important;
+   }
+   .register-container .register-btn {
+       padding: 8px !important;
+       font-size: 14px !important;
+       line-height: 20px !important;
+   }
+/* ======================] add to cart */
+ .modals{
+     width: 98%;
+ }
+
+ .footer-contents {
+     flex-direction: column;
+ }
+
+ .footer-contents .counters {
+     width: 90%;
+     justify-content: space-between;
+     margin-bottom: 10px;
+ }
+
+ .footer-contents .counters .coun {
+     width: 160px;
+ }
+
+ .footer-contents .card-btns {
+     width: 90%;
+     margin: 0px 10px;
+ }
+
+}
+
+
+
+/* =============] MAX WIDTH 470PX */
+@media (max-width:370px){
+    /* ================] top nav  */
+        .nav-container{
+           padding: 5px 7px;
+        }
+        .navbar-left img {
+            margin: 0px 3px;
+        }
+        .navbar-left .delivery-info {
+            padding: 0px 3px;
+            font-size: 12px;
+        }
+    }

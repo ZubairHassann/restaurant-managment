@@ -1,0 +1,19 @@
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btns{
+    background-color:rgb(236, 17, 100);
+    border: none;
+    outline: none;
+    padding: 6px;
+    color: rgb(243, 223, 172);
+    border-radius: 8px;
+}
+
+.txt{
+    color: rgb(145, 40, 140);
+}

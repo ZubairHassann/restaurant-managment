@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Design</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .cart-container {
+            background-color: #f8f9fa;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-header {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #777;
+            padding-bottom: 10px;
+        }
+.pay-content{
+    /* padding: 8px 0; */
+
+}
+
+.pay{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+.pay .cItems{
+    width: 70px;
+    text-align: center;
+    padding: 4px 0px;
+    border-radius: 4px;
+    border: 1px solid #777;
+}
+.pay-content .pay-item{
+    margin: 14px 0px;
+    border-bottom: 1px solid #ddd;
+    padding: 6px 0px;
+}
+        .cart-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 10px;
+        }
+
+        .cart-item img {
+            width: 60px;
+            height: 60px;
+            border-radius: 5px;
+        }
+
+        .item-details {
+            flex: 1;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .item-description {
+            font-size: 12px;
+            color: #777;
+        }
+
+        .item-price {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .quantity-section {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .quantity-section input {
+            width: 40px;
+            height: 30px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .promo-code {
+            margin-top: 15px;
+        }
+
+        .promo-code input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .price-summary {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+        }
+
+        .total-price {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .place-order {
+            margin-top: 20px;
+            width: 100%;
+            background: #e6005c;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .place-order:hover {
+            background: #cc0052;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cart-container">
+        <div class="cart-header">Your Cart</div>
+
+        <div class="pay-content">
+          <div class="pay-item">
+            <div class="cart-item">
+            <img src="../ch1.png" alt="Item Image">
+            <div class="item-details">
+                <div class="item-title">My Deal</div>
+                <div class="item-description">
+                    1 Savour Krispo, 1 Chicken Piece, 1 French Fries & 1 Drink
+                </div>
+            </div>
+            <!-- <div class="item-price">Rs. 930.00</div> -->
+          </div>
+          <div class="pay">
+           <div class="cItems">1</div>
+           <div class="cPrice">Rs.1200</div>
+         </div>
+          </div>
+            <div class="pay-item">
+            <div class="cart-item">
+            <img src="../ch1.png" alt="Item Image">
+            <div class="item-details">
+                <div class="item-title">My Deal</div>
+                <div class="item-description">
+                    1 Savour Krispo, 1 Chicken Piece, 1 French Fries & 1 Drink
+                </div>
+            </div>
+            <!-- <div class="item-price">Rs. 930.00</div> -->
+          </div>
+          <div class="pay">
+           <div class="cItems">1</div>
+           <div class="cPrice">Rs.1200</div>
+         </div>
+          </div>
+        </div>
+        <div class="promo-code">
+            <input type="text" placeholder="Promo Code">
+        </div>
+
+        <div class="price-summary">
+            <div class="price-row">
+                <span>Subtotal</span>
+                <span>Rs. 930.00</span>
+            </div>
+            <div class="price-row">
+                <span>Delivery Charges</span>
+                <span>Rs. 175.00</span>
+            </div>
+            <div class="price-row">
+                <span>Tax (15%)</span>
+                <span>Rs. 139.50</span>
+            </div>
+            <div class="price-row total-price">
+                <span>Grand total (Incl. Tax)</span>
+                <span>Rs. 1,244.50</span>
+            </div>
+        </div>
+
+        <button class="place-order">Place Order</button>
+    </div>
+
+</body>
+</html>
